@@ -1,0 +1,64 @@
+.header {
+  padding: 16px 0;
+  margin-bottom: 16px;
+  background: rgb(18, 18, 18);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    height: 36px;
+  }
+
+  &__search {
+    margin-left: 16px;
+    $thisSearch: &;
+    width: 50%;
+
+    &-input {
+      outline: none;
+      font-size: 16px;
+      padding: 8px 16px 8px;
+      border-radius: 8px;
+      border: 1px solid #dfe1e5;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    &-error {
+      display: none;
+      color: red;
+      font-size: 12px;
+      margin-top: 6px;
+    }
+
+    &.error {
+      #{$thisSearch}-error {
+        display: block;
+      }
+
+      #{$thisSearch}-input {
+        border-color: red;
+      }
+    }
+  }
+
+  &__button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    background: #fb765f;
+    border-radius: 32px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    min-height: 36px;
+  }
+}

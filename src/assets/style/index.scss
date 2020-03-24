@@ -1,0 +1,16 @@
+@import '~normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.content {
+  padding: 16px;
+}
